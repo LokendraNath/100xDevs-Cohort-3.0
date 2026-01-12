@@ -3,9 +3,7 @@ type User = {
   name: string;
 };
 
-type Users = {
-  [key: string]: User;
-};
+type Users = Record<string, User>;
 
 const users: Users = {
   "loki@gdfk": {
