@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const sumOfAge = (user1, user2) => {
-    return user1.age + user2.age;
+const handleEvent = (event) => {
+    console.log(`handling event: ${event}`);
 };
-const age = sumOfAge({ name: "Lokendra Nath", age: 20 }, { name: "Deepak Sahu", age: 21 });
-console.log(age);
+console.log(handleEvent("click"));
+export {};
 //# sourceMappingURL=index.js.map
