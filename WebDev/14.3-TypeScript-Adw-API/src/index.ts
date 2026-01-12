@@ -1,15 +1,13 @@
 interface User {
+  id: number;
   name: string;
   age: number;
+  email: string;
+  password: string;
 }
 
-const sumOfAge = (user1: User, user2: User) => {
-  return user1.age + user2.age;
-};
+type UpdateProps = Pick<User, "name" | "age" | "email">;
 
-const age = sumOfAge(
-  { name: "Lokendra Nath", age: 20 },
-  { name: "Deepak Sahu", age: 21 }
-);
-
-console.log(age)
+function updateUser(updatedProps: UpdateProps) {
+  // hit the database tp update the user
+}
